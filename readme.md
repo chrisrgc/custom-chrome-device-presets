@@ -28,10 +28,11 @@ For example:
     ```
     C:\Program Files (x86)\Google\Chrome\Application\
     ```
-    or
+
     ```
     /opt/google/chrome/
     ```
+    ...or similar.
 1. Locate the file `resources.pak`. _This may be in a version specific subdirectory. For example, `75.0.3770.100`_
 1. Copy the `resources.pak` datapack file to your working directory and rename it, e.g. `resources.pak.bak`.
 _Important: Keep this file safe in case you want to revert to the original configuration._
@@ -40,14 +41,14 @@ _Important: Keep this file safe in case you want to revert to the original confi
     ./custom-device-presets.py ./working-dir/resource.pak.bak tailwind
     ```
 5. The script will create a new patched resources file in the current directory.
-1. Copy this file to the Chrome installation directory, overwriting the original resources file. _You may require administrator/root privileges to perform this step._
+1. Copy this file to your Chrome installation directory, overwriting the original resources file. _You may require administrator/root privileges to perform this step._
 
 ### Presets
 
 The breakpoint presets you can choose from are:
  - `default` - the original Chrome device presets.
- - `tailwind` - the breakpoints from Tailwind CSS (sm, md, lg, xl) plus xs (320px) and 4K (2560px) options.
- - `bootstrap4` - the breakpoints from Bootstrap 4 (xs, sm, md, lg, xl) plus a 4K (2560px) option.
+ - `tailwind` - the breakpoints from [Tailwind CSS](https://tailwindcss.com/) (sm, md, lg, xl) plus xs (320px) and 4K (2560px) options.
+ - `bootstrap4` - the breakpoints from [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) (xs, sm, md, lg, xl) plus a 4K (2560px) option.
 
 ## If something goes wrong
 
@@ -63,7 +64,7 @@ If this happens:
 
 ## Notes
 
- - You will lose any preset customisations when Chrome automatically updates. If that happens you will have to run the script on the resources file for the new version.
+ - You will lose any preset customisations when Chrome automatically updates. If that happens you will have to run the script on the resources file for the new version of Chrome.
 
 
 ## License
