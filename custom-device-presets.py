@@ -90,8 +90,8 @@ def replace_titles(data, start, end, breakpoints):
     return data
 
 
-def find_titles_length(r):
-    match = re.search("\s+titles\s*=\s*\[(.*?)\]\s*;", r)
+def find_titles_length(data):
+    match = re.search("\s+titles\s*=\s*\[(.*?)\]\s*;", data)
     if match:
         return match.end() - match.start()
 
