@@ -18,6 +18,7 @@ breakpointOptions = [
         {"size": 768, "title": "Tailwind md"},
         {"size": 1024, "title": "Tailwind lg"},
         {"size": 1280, "title": "Tailwind xl"},
+        {"size": 1536, "title": "Tailwind 2xl"},
         {"size": 2560, "title": "4K"}]},
     {"name": "bootstrap4", "sizes": [
         {"size": 320, "title": "BS4 xs"},
